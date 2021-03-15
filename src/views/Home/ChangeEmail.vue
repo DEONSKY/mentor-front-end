@@ -131,7 +131,6 @@ export default {
       this.confirmCode = Math.floor(Math.random() * (1000000 - 100000)) + 100000
     },
     consolInfo: function () {
-      console.log('New Email Address: ' + this.newEmail + ' Confirm Code: ' + this.confirmCode)
       // more code
     },
     onConfirm: function () {

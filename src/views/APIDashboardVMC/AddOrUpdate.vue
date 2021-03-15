@@ -119,11 +119,11 @@ export default {
           })
         })
         .catch(err => {
-            const message = err.response.data.errors
-              .map(e => e.message)
-              .join('<br/>')
-            const content = document.createElement('div')
-            content.innerHTML = message
+          const message = err.response.data.errors
+            .map(e => e.message)
+            .join('<br/>')
+          const content = document.createElement('div')
+          content.innerHTML = message
           swal({
             title: 'Error!',
             content,
@@ -133,7 +133,7 @@ export default {
     },
     updateKeyTitle (value) {
       if (value[0]) {
-        console.table(value)
+        // console.table(value)
         this.app.data_type = value[0].key
       }
     },
